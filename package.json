@@ -1,0 +1,24 @@
+{
+  "name": "student-db-mysql",
+  "version": "1.0.0",
+  "description": "Student Database Management System using Node.js and MySQL (MMCA314D Assignment 2 Q1)",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "create-db": "node --env-file=.env operations/1-create-database.js",
+    "create-table": "node --env-file=.env operations/2-create-table.js",
+    "insert": "node --env-file=.env operations/3-insert.js",
+    "select": "node --env-file=.env operations/4-select.js",
+    "update": "node --env-file=.env operations/5-update.js",
+    "delete": "node --env-file=.env operations/6-delete.js",
+    "drop-table": "node --env-file=.env operations/7-drop-table.js",
+    "all": "node --env-file=.env operations/run-all.js",
+    "start": "node --env-file=.env app.js"
+  },
+  "keywords": ["nodejs", "mysql", "crud", "student"],
+  "author": "Shalini Bharathidasan",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  }
+}
