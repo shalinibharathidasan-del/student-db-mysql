@@ -56,6 +56,14 @@ npm start
 0. Exit
 ```
 
+## Web page
+
+```bash
+npm run web
+```
+
+Open **http://localhost:3001**. The page shows totals (students, average and highest marks), a form to add a student, a searchable table, and Edit / Delete buttons for each row. It uses Node's built-in `http` module and a `mysql2` connection pool. The database and table are created automatically if they don't exist.
+
 ## Table design
 
 ```sql
@@ -79,6 +87,7 @@ student-db-mysql/
 ├── .env.example          Connection settings template (copy to .env)
 ├── db.js                 Create connection + friendly error messages
 ├── app.js                Interactive menu (add, list, search, update, delete)
+├── server.js             Web page (npm run web, http://localhost:3001)
 └── operations/
     ├── 1-create-database.js
     ├── 2-create-table.js
@@ -106,3 +115,4 @@ student-db-mysql/
 6. Add script to run all operations in order
 7. Add interactive menu app for student CRUD
 8. Add README with setup, operations and table design
+9. Add web page for managing students (npm run web)

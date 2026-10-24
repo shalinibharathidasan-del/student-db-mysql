@@ -13,7 +13,8 @@
     "delete": "node --env-file=.env operations/6-delete.js",
     "drop-table": "node --env-file=.env operations/7-drop-table.js",
     "all": "node --env-file=.env operations/run-all.js",
-    "start": "node --env-file=.env app.js"
+    "start": "node --env-file=.env app.js",
+    "web": "node --env-file=.env server.js"
   },
   "keywords": ["nodejs", "mysql", "crud", "student"],
   "author": "Shalini Bharathidasan",
